@@ -14,7 +14,7 @@ import itertools
 from collections import deque, Counter
 import multiprocessing as mup
 import tensorflow as tf
-import pydirectinput
+import pyautogui
 
 # import threading
 
@@ -584,13 +584,13 @@ def Ai():
                             print(message[-1])
                             message.append(actions[ActionDetected])
                             if message[-1] == "goLeft":
-                                pydirectinput.press("left")
+                                pyautogui.press("right")
                             elif message[-1] == "goRight":
-                                pydirectinput.press("right")
-                            elif message[-1] == "goUp":
-                                pydirectinput.press("up")
-                            elif message[-1] == "goDown":
-                                pydirectinput.press("down")
+                                pyautogui.press("left")
+                            elif message[-1] == "modeDiaPo":
+                                pyautogui.hotkey("shift", "f5")
+                            elif message[-1] == "modeNormal":
+                                pyautogui.hotkey("esc")
                         
 
                             
@@ -610,7 +610,7 @@ def Ai():
             debug_image = draw_point_history(debug_image, Keypoints_history)
 
             # Screen reflection
-            # cv2.imshow('Hand Gesture Recognition', debug_image)
+            cv2.imshow('Hand Gesture Recognition', debug_image)
 
 
     cap.release()
