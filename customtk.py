@@ -787,8 +787,8 @@ button1 = customtkinter.CTkButton(master=frame, width=220, text="Login", command
 button1.place(x=50, y=240)
 
 
-img2=customtkinter.CTkImage(Image.open("./Assets/Google__G__Logo.svg.webp").resize((20,20), Image.ANTIALIAS))
-img3=customtkinter.CTkImage(Image.open("./Assets/124010.png").resize((20,20), Image.ANTIALIAS))
+img2=customtkinter.CTkImage(Image.open("./Assets/Google__G__Logo.svg.webp").resize((20,20), Image.LANCZOS))
+img3=customtkinter.CTkImage(Image.open("./Assets/124010.png").resize((20,20), Image.LANCZOS))
 button2= customtkinter.CTkButton(master=frame, image=img2, text="Google", width=100, height=20, compound="left", fg_color='white', text_color='black', hover_color='#AFAFAF')
 button2.place(x=50, y=290)
 
