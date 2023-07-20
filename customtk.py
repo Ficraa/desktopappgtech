@@ -25,7 +25,7 @@ app = customtkinter.CTk()  #creating cutstom tkinter window
 app.geometry("12500x800")
 app.maxsize(1250,800)
 app.title('G-tech Login')
-app.iconbitmap('icon.ico')
+app.iconbitmap('./Assets/icon.ico')
 message = ["lewlhada"]
 mp_hands = mp.solutions.hands 
 mp_drawing = mp.solutions.drawing_utils  
@@ -629,7 +629,7 @@ def button_function():
     w.maxsize(1250,725)
     w.minsize(1250,725)
     w.title('G-tech Home')
-    w.iconbitmap('icon.ico')
+    w.iconbitmap('./Assets/icon.ico')
 
     label = customtkinter.CTkLabel(master=w, text='')
     label.pack(pady=20, padx=20)
@@ -642,7 +642,7 @@ def button_function():
     frame=customtkinter.CTkFrame(master=w, width=900, height=690, corner_radius=15,fg_color='#1F1E3F')
     frame.place(relx=0.625, rely=0.5, anchor=tkinter.CENTER)
 
-    logo = ImageTk.PhotoImage(Image.open("icon.png"))
+    logo = ImageTk.PhotoImage(Image.open("./Assets/icon.png"))
     logo_label = customtkinter.CTkLabel(master=frame, image=logo, text="")
     logo_label.place(relx=0.009, rely=0.009, anchor=tkinter.NW)
 
@@ -725,9 +725,9 @@ def button_function():
     button8.pack(pady=5, padx=0)
 
     # Load the image files for the logos
-    instagram_image = customtkinter.CTkImage(light_image=Image.open(os.path.join(os.path.dirname(__file__), './ig.png')), size=(30, 30))
-    twitter_image = customtkinter.CTkImage(light_image=Image.open(os.path.join(os.path.dirname(__file__), './twit.png')), size=(30, 30))
-    gmail_image = customtkinter.CTkImage(light_image=Image.open(os.path.join(os.path.dirname(__file__), './fb.png')), size=(30, 30))
+    instagram_image = customtkinter.CTkImage(light_image=Image.open(os.path.join(os.path.dirname(__file__), './Assets/ig.png')), size=(30, 30))
+    twitter_image = customtkinter.CTkImage(light_image=Image.open(os.path.join(os.path.dirname(__file__), './Assets/twit.png')), size=(30, 30))
+    gmail_image = customtkinter.CTkImage(light_image=Image.open(os.path.join(os.path.dirname(__file__), './Assets/fb.png')), size=(30, 30))
 
     # Create labels for each logo
     instagram_label = customtkinter.CTkLabel(master=sidebar, image=instagram_image, bg_color='transparent', text='')
@@ -762,7 +762,7 @@ def button_function():
     
 
 
-img1=ImageTk.PhotoImage(Image.open("pattern.jpg"))
+img1=ImageTk.PhotoImage(Image.open("./Assets/pattern.jpg"))
 l1=customtkinter.CTkLabel(master=app,image=img1)
 l1.pack()
 
@@ -787,8 +787,8 @@ button1 = customtkinter.CTkButton(master=frame, width=220, text="Login", command
 button1.place(x=50, y=240)
 
 
-img2=customtkinter.CTkImage(Image.open("Google__G__Logo.svg.webp").resize((20,20), Image.ANTIALIAS))
-img3=customtkinter.CTkImage(Image.open("124010.png").resize((20,20), Image.ANTIALIAS))
+img2=customtkinter.CTkImage(Image.open("./Assets/Google__G__Logo.svg.webp").resize((20,20), Image.ANTIALIAS))
+img3=customtkinter.CTkImage(Image.open("./Assets/124010.png").resize((20,20), Image.ANTIALIAS))
 button2= customtkinter.CTkButton(master=frame, image=img2, text="Google", width=100, height=20, compound="left", fg_color='white', text_color='black', hover_color='#AFAFAF')
 button2.place(x=50, y=290)
 
