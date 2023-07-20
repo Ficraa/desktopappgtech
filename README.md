@@ -1,6 +1,7 @@
 # HandWave - Hand Gesture Desktop Software Control
 
-![HandWave Logo](handwave-logo.png)
+![Blue_and_Pink_Modern_Tech_Electronics_and_Technology_Retractable_Exhibition_Banner-removebg](https://github.com/octorose/desktopappgtech/assets/48595123/c419fff9-65e7-4a4f-ad46-1563244c4260)
+
 
 Welcome to the HandWave project! HandWave is a hand gesture desktop software control application that allows users to interact with various desktop software using hand gestures and poses. The application is built in Python and incorporates a machine learning model to detect and interpret hand gestures accurately.
 
