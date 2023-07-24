@@ -45,7 +45,7 @@ To toggle PowerPoint slideshow mode:
 
 ## Machine Learning Model
 
-HandWave leverages a machine learning model trained on hand gesture data to accurately recognize user actions. The model uses techniques like Convolutional Neural Networks (CNNs) for image recognition to interpret hand gestures and respond accordingly.
+HandWave leverages a machine learning model trained on hand gesture data to accurately recognize user actions. The model uses techniques like LSTM for gestures recognition to interpret hand gestures and respond accordingly.
 
 ## Contribution and Thanks
 
